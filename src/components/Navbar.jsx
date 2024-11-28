@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 const navigation = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: "/" },
   { name: "Sobre", href: "#" },
 ];
 
@@ -18,10 +19,12 @@ export default function Navbar() {
         className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
       >
         <div className="flex w-full justify-between items-center gap-x-12">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Inova</span>
-            <img alt="" src={logo} className="h-12 w-auto" />
-          </a>
+          <Link to={`/`}>
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Inova</span>
+              <img alt="" src={logo} className="h-12 w-auto" />
+            </a>
+          </Link>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a

@@ -26,7 +26,7 @@ Este projeto foi desenvolvido como parte de um **trabalho acadêmico** para a **
 
 1. Clone o repositório:
     ```bash
-    git clone <URL-DO-REPOSITORIO>
+    git clone https://github.com/brnmd96/consultoria-junior-urcamp.git
     cd consultoria-junior
     ```
 

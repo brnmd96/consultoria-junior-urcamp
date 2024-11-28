@@ -1,4 +1,4 @@
-import { Navbar, HeaderSection, Blogs } from "./components";
+import { Navbar, HeaderSection, Blogs, Footer } from "./components";
 
 export default function App() {
   return (
@@ -6,6 +6,7 @@ export default function App() {
       <Navbar />
       <HeaderSection />
       <Blogs />
+      <Footer />
     </div>
   );
 }
